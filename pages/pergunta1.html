@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Modelo p&aacute;gina perguntas </title>
+    <link rel="stylesheet" href="CSS/estiloPequenas" />
+    <!-- Cria icon pro site -->
+    <link rel="icon" type="image/jpg" href="images/mudardepois.jpg" />
+</head>
+
+<body bgcolor="#DEF5E5">
+    <div class="container">
+        <div class="PergunPrinc">
+            01 - O sistema genital masculino é formado por órgãos que atuam na reprodução. É nesse sistema que os gametas masculinos, chamados de espermatozoides, são produzidos. Entre as alternativas a seguir, marque aquela que indica o nome correto do local onde são produzidos os espermatozoides.?
+        </div>
+        <button onclick="alternativaErrada()" id="blocoA">
+            a) Escroto.
+        </button>
+
+        <button onclick="alternativaErrada();" id="blocoB">
+            b) Epidídimo.
+        </button>
+
+        <button onclick="alternativaErrada()" id="blocoC">
+            c) Pênis.
+        </button>
+
+        <button onclick="alternativaCerta()" id="blocoD">
+            d) Testículo.
+        </button>
+
+    </div>
+
+    <button onclick="mudarPerg()" class="proxPergunt"> Próxima pergunta </button>
+
+    <script>
+        // Variável para armazenar os pontos
+        var pontos = 0;
+    
+        // Seleciona o elemento HTML com o id "blocoD"
+        const respostaCorreta = document.getElementById("blocoD");
+    
+        // Adiciona um ouvinte de evento para o clique no elemento com id "blocoD"
+        respostaCorreta.addEventListener("click", alternativaCerta)
+    
+        // Função chamada quando a alternativa correta é clicada
+        function alternativaCerta() {
+            // Incrementa os pontos e exibe um alerta
+            pontos++;
+            window.alert("Você acertou!");
+        }
+    
+        // Função chamada quando uma alternativa incorreta é clicada
+        function alternativaErrada() {
+            window.alert("Não foi dessa vez :(");
+        }
+    
+        // Função chamada quando o botão "Próxima pergunta" é clicado
+        function mudarPerg() {
+            // Redireciona para a página "pergunta2.html"
+            window.location.assign("pergunta2.html");
+        }
+    </script>
+    
+</body>
+
+</html>

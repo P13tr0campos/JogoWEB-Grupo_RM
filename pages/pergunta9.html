@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/estiloGrandes.css" />
+        <title>Quiz Sistema Digestorio</title>
+        <!-- Cria icon pro site -->
+        <link rel="icon" type="image/png" href="images/fotinha3.png" />
+    </head>
+
+    <body bgcolor="#DEF5E5">
+
+        <div class="container">
+            <div class="PergunPrinc">
+            09 - A circuncisão é um procedimento cirúrgico que se caracteriza:
+
+            </div>
+            <button onclick="alternativaErrada()" id="blocoA">
+                a) pelo corte dos ductos deferentes.
+            </button>
+
+            <button onclick="alternativaErrada();" id="blocoB">
+                b) pela retirada da glande.
+            </button>
+
+            <button onclick="alternativaErrada()" id="blocoC">
+                c) pelo aumento da fimose.
+            </button>
+
+            <button onclick="alternativaCerta()" id="blocoD">
+                d) pela retirada do prepúcio.
+            </button>
+
+        </div>
+
+        <button onclick="mudarPerg()" class="proxPergunt"> Proxima pergunta </button>
+
+<script>
+          var pontos = 0;
+        const respostaCorreta = document.getElementById("blocoD");
+        respostaCorreta.addEventListener("click", alternativaCerta)
+
+
+        function alternativaCerta(){
+                pontos++;
+                window.alert("Você acertou!");
+        }
+
+        function alternativaErrada(){
+            window.alert("Nao foi dessa vez");
+        }
+
+        function mudarPerg() {
+            window.location.assign("pergunta10.html");
+        }
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,54 @@
+.bemvindo{
+    color:cadetblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 3.75rem;
+    margin: 1.25rem;
+    margin-bottom: 2.375rem;
+}
+
+.text{
+    color:rgb(76, 127, 138);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.844rem;
+    margin-left: 31.8%;
+    margin-bottom: 0.063rem;
+}
+#enviaBTN{
+    color:rgb(82, 196, 202);
+    background-color: rgb(33, 54, 51);
+    width: 8.125rem;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 1.563rem;
+    margin-left: 44%;
+    border: none;
+    transition: background .10s ease-in-out;
+    cursor: pointer;
+}
+
+#enviaBTN:hover{
+    color:rgb(160, 202, 205);
+    background-color: rgb(5, 45, 46);
+    box-shadow: .5px .5px 2px 0px rgb(199, 204, 204);
+}
+
+#enviaBTN:disabled{
+    color:rgb(0, 0, 0);
+    background-color: rgb(97, 116, 116);
+}
+
+.principal{
+    padding: 3%;
+    margin-top: 7.5rem;
+}
+
+#nameUser{
+    width: 37%;
+    height: 2.188rem;
+    border-radius: 0.563rem;
+    text-indent: 0.313rem;
+    border-color: rgb(94, 158, 165);
+    margin-left: 31.2%;
+    margin-bottom: 0.25rem;
+}

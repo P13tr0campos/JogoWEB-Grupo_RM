@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/estiloPequenas.css" />
+        <title>Quiz Sistema Digestorio</title>
+        <!-- Cria icon pro site -->
+        <link rel="icon" type="image/png" href="images/fotinha3.png" />
+    </head>
+
+    <body bgcolor="#DEF5E5">
+
+        <div class="container">
+            <div class="PergunPrinc">
+            11 - Trata-se de um líquido constituinte do esperma que apresenta aspecto leitoso e é alcalino, contribui para neutralizar a acidez das secreções vaginais, além de promover um aumento da motilidade dos espermatozóides. Esse líquido é produzido:
+            </div>
+            <button onclick="alternativaErrada()" id="blocoA">
+                a) pelo epidídimo.
+            </button>
+
+            <button onclick="alternativaErrada();" id="blocoB">
+                b) pelo testículo.
+            </button>
+
+            <button onclick="alternativaCerta()" id="blocoC">
+                c) pela próstata.
+            </button>
+
+            <button onclick="alternativaErrada()" id="blocoD">
+                d) pelas glândulas bulbouretrais.
+            </button>
+
+        </div>
+
+        <button onclick="mudarPerg()" class="proxPergunt"> Página Final </button>
+
+<script>
+           var pontos = 0;
+        const respostaCorreta = document.getElementById("blocoC");
+        respostaCorreta.addEventListener("click", alternativaCerta)
+
+
+        function alternativaCerta(){
+                pontos++;
+                window.alert("Você acertou!");
+        }
+
+        function alternativaErrada(){
+            window.alert("Nao foi dessa vez");
+        }
+
+        function mudarPerg() {
+            window.location.assign("./pagfinal.html");
+        }
+</script>
+
+    </body>
+</html>

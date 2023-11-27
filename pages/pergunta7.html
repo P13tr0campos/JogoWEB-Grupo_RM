@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/estiloPequenas.css" />
+    <title>Quiz Sistema Digestorio</title>
+    <!-- Cria icon pro site -->
+    <link rel="icon" type="image/png" href="images/fotinha3.png" />
+</head>
+
+<body bgcolor="#DEF5E5">
+
+    <div class="container">
+        <div class="PergunPrinc">
+            07 - Algumas situações estão relacionadas com o aumento do número de casos de câncer de pênis. Analise as alternativas a seguir e marque aquela que não apresenta relação com esse tipo de câncer.
+        </div>
+        <button onclick="alternativaErrada()" id="blocoA">
+            a) Acúmulo de secreção entre a glande e o prepúcio.
+        </button>
+
+        <button onclick="alternativaErrada();" id="blocoB">
+            b) Má higiene íntima.
+        </button>
+
+        <button onclick="alternativaCerta()" id="blocoC">
+            c) Realização de circuncisão.
+        </button>
+
+        <button onclick="alternativaErrada()" id="blocoD">
+            d) Estreitamento do prepúcio.
+        </button>
+
+    </div>
+
+    <button onclick="mudarPerg()" class="proxPergunt"> Proxima pergunta </button>
+
+    <script>
+        var pontos = 0;
+        const respostaCorreta = document.getElementById("blocoC");
+        respostaCorreta.addEventListener("click", alternativaCerta)
+
+
+        function alternativaCerta() {
+            pontos++;
+            window.alert("Você acertou!");
+        }
+
+        function alternativaErrada() {
+            window.alert("Nao foi dessa vez");
+        }
+
+        function mudarPerg() {
+            window.location.assign("pergunta8.html");
+        }
+    </script>
+
+</body>
+
+</html>

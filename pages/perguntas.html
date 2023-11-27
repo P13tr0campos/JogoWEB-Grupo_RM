@@ -1,0 +1,55 @@
+<!-- Grupo : Sistema re[rodutor masculino] -->
+<!-- Ana Clara Morais de Freitas, Cassiano Miguel e Pietro Campos -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" type="images/jpeg" href="images/pênis.jpeg" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz |  Sistema Reprodutor Masculino</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+</head>
+
+<body class="Quizbody" background="images/fundo.png">
+        <main class="tela-principal arrumarOmain">
+
+        <section class='conteudos arrumandoAsection'>
+
+            <h1 class="oTituloh1"> Quiz sobre o Sistema Reprodutor Masculino </h1> <img src="images/prostata.png" alt="imagem fofa" width="6%" height="3%">
+
+            <article class='centro' id='instrucoes'>
+                Leia a questão e clique na resposta correta
+            </article>
+
+            <article class='questoes'>
+                <div class="cronometro"> </div>
+                <br>
+                
+                <header class='questao'>
+                    <span id='numQuestao'></span>
+                    <h2 id='pergunta'></h2>
+                </header>
+
+                <div class='corpo'>
+                    <ol type='A' id='alternativas'>
+                        <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='d' value='1D' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                    </ol>
+                </div>
+            </article>
+            
+            <article id='aviso'>Questão <span id='numero'></span> de <span id='total'></span> </article>
+            
+        </section>
+
+        <footer class='centro'>Desenvolvido por Ana Clara, Cassiano Miguel, Hevillyn Emanuele e Pietro Campos &copy; 2023</footer>
+    </main>
+
+<!-- JS externo -->
+<script src="java/script.js"> </script>
+
+</body>
+</html>

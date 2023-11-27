@@ -1,0 +1,125 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    height: 23.9rem;
+    width: 70%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(142, 195, 176);
+    border-radius: 0.45rem;
+    margin: 4% 14.5%;
+    margin-top: 6%;
+}
+
+.PergunPrinc {
+    margin-left: 6%;
+    box-shadow: rgba(4, 27, 23, 0.26) 40px 48px 100px 2px;
+    position: absolute;
+    top: 18.3%;
+    /* posiciona na metade da tela */
+    left: 18.8rem;
+    /* posiciona na metade da tela */
+    border-radius: 2%;
+    width: 40vw;
+    height: 28vh;
+    background:rgb(142, 195, 176);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 115%;
+}
+
+#blocoA {
+    margin-top: 29%;
+    margin-left: 11.5rem;
+    margin-bottom: 4%;
+    border-color: transparent;
+    text-align: center;
+    width: 10vw;
+    height: 11vh;
+    background: rgb(188, 234, 213);
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 86%;
+}
+
+#blocoB {
+    margin-top: 27%;
+    margin-left: 0.8rem;
+    margin-bottom: 4%;
+    border-color: transparent;
+    text-align: center;
+    width: 9vw;
+    height: 11vh;
+    background: rgb(222, 245, 229);
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 86%;
+}
+
+#blocoC {
+    margin-top: 27%;
+    margin-left: 0.8rem;
+    margin-bottom: 4%;
+    border-color: transparent;
+    text-align: center;
+    width: 9vw;
+    height: 11vh;
+    background: rgb(188, 234, 213);
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 86%;
+}
+
+#blocoD {
+    margin-top: 27%;
+    margin-left: 0.8rem;
+    margin-bottom: 1%;
+    border-color: transparent;
+    text-align: center;
+    width: 9vw;
+    height: 11vh;
+    background: rgb(222, 245, 229);
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 86%;
+}
+
+#blocoA:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#blocoB:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#blocoC:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#blocoD:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.exibirPlacar {
+    background: #335526;
+}
+
+.proxPergunt
+{
+    margin-left: 71%;
+    width: 11%;
+    height: 50%;
+    border-color: transparent;
+    background-color:rgb(158, 213, 197);
+    border-radius: 2.8%;
+    font-size: 86%;
+}
+
+.proxPergunt:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}

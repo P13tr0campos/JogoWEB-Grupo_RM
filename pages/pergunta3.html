@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/estiloGrandes.css" />
+    <title>Quiz Sistema Digestorio</title>
+    <!-- Cria icon pro site -->
+    <link rel="icon" type="image/png" href="images/fotinha3.png" />
+</head>
+
+<body bgcolor="#DEF5E5">
+
+    <div class="container">
+        <div class="PergunPrinc">
+            03 - Sabemos que os espermatozoides não são eliminados sozinhos no momento da ejaculação. Junto a eles são liberados líquidos nutritivos produzidos pelas:
+
+        </div>
+        <button onclick="alternativaErrada()" id="blocoA">
+            a) glândulas bulbouretrais, próstata e testículo.
+
+        </button>
+
+        <button onclick="alternativaCerta();" id="blocoB">
+            b) glândulas seminais, próstata e glândulas bulbouretrais.
+        </button>
+
+        <button onclick="alternativaErrada()" id="blocoC">
+            c) glândulas seminais, testículo e glândulas bulbouretrais.
+        </button>
+
+        <button onclick="alternativaErrada()" id="blocoD">
+            d) glândulas bulbouretrais, testículo e bexiga.
+        </button>
+
+    </div>
+
+    <button onclick="mudarPerg()" class="proxPergunt"> Proxima pergunta </button>
+
+    <script>
+        var pontos = 0;
+        const respostaCorreta = document.getElementById("blocoB");
+        respostaCorreta.addEventListener("click", alternativaCerta)
+
+
+        function alternativaCerta() {
+            pontos++;
+            window.alert("Você acertou!");
+        }
+
+        function alternativaErrada() {
+            window.alert("Nao foi dessa vez");
+        }
+
+        function mudarPerg() {
+            window.location.assign("pergunta4.html");
+        }
+    </script>
+
+</body>
+
+</html>

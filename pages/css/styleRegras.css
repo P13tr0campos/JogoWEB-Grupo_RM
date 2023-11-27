@@ -1,0 +1,106 @@
+.instrucoes {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEF5E5;
+    border-radius: 0.95rem;
+    margin: 2% 20%;
+    margin-top: 5.5%;
+    box-shadow: #DEF5E5 6px 2px 16px 0px, rgba(219, 251, 229, 0.8) -6px -2px 16px 0px;
+}
+
+.titulo {
+    color: #38a482;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 3.1rem;
+    margin: 1.25rem;
+    margin-bottom: 2.375rem;
+}
+
+.text {
+    color: #358b70;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.numeros {
+    color: #47967d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: 1.53rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.text1 {
+    color: #47967d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.70rem;
+    margin: 1.2rem;
+    margin-bottom: 2.1rem;
+}
+
+#botaoComecar {
+    color: #DEF5E5;
+    background-color: #50ac8a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.90rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1.22rem;
+    margin-left: 35.5%;
+    height: 8%;
+    width: 30%;
+    text-decoration: none;
+    transition: all 250ms;
+    display: inline-block;
+    user-select:auto;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+}
+
+#botaoComecar:active {
+    box-shadow: #50ac8a 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+#botaoComecar:focus {
+    box-shadow: #50ac8a 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #50ac8a 0 -3px 0 inset;
+}
+
+#botaoComecar:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#50ac8a 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+@media only screen and (max-width: 600px){
+    #botaoComecar {
+        color: #DEF5E5;
+        background-color: #50ac8a;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 1.90rem;
+        border: 1px;
+        border-radius: 9px;
+        cursor: pointer;
+        margin-bottom: 1.22rem;
+        margin-left: 35.5%;
+        height: 8%;
+        width: 20%;
+        text-decoration: none;
+        transition: all 250ms;
+        display: inline-block;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        border-radius: 100px;
+        box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    }
+}
